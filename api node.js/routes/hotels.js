@@ -16,8 +16,8 @@ router.post("/", createHotel);
 router.put("/:id", updateHotel);
 router.delete("/:id", deleteHotel);
 
-router.get("/find/:id", getHotel);
 router.get("/", getHotels);
+router.get("/find/:id", getHotel);
 router.get("/countByCity", countByCity);
 router.get("/countByType", countByType);
 router.get("/room/:id", getHotelRooms);
